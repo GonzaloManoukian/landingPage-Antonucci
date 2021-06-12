@@ -1,0 +1,83 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $font-16;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: $color-black;
+  color: $color-white;
+
+  @include breakpoint-down(medium) {
+    font-size: $font-14;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.flex {
+  display: flex;
+
+  &-desktop {
+    @include breakpoint-up(large) {
+      display: flex;
+    }
+  }
+
+  &-c {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-c-mobile {
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}

@@ -1,0 +1,60 @@
+.servicios {
+    padding: 100px 0;
+    text-align: center;
+    min-height: 100vh;
+    
+    > h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: $font-18;
+        text-transform: uppercase;
+    }
+
+    > h3 {
+        font-size: $font-32;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        color: $color-gold;
+        margin-bottom: 5%;
+    }
+
+    &Container {
+        width: 60%;
+
+        &Row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &Card {
+            width: 18vw;
+            height: 18vw;
+            background-color: $color-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &Data {
+                width: 16vw;
+                height: 16vw;
+                border: 3px solid $color-gold;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                > img {
+                    width: 30%;
+                    margin-bottom: 20%;
+                }
+
+                > h4 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 900;
+                    font-size: $font-18;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+}

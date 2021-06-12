@@ -1,0 +1,468 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: #16171B;
+  color: #FFFFFF;
+}
+
+@media (max-width: 63.9375em) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 64em) {
+  .flex-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.flex-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 64em) {
+  .flex-c-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+}
+
+.headerLogo {
+  margin-left: 50px;
+}
+
+.headerLogo img {
+  height: 50px;
+}
+
+.headerLogo span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.125rem;
+  letter-spacing: 3px;
+  margin-left: 20px;
+}
+
+.headerNav {
+  height: 100%;
+  margin-right: 50px;
+  width: 40%;
+}
+
+.headerNav ul {
+  height: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.headerNav li {
+  text-transform: uppercase;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.headerNav li:hover {
+  font-weight: 500;
+}
+
+.headerNav li:last-child {
+  color: #eebd6e;
+  background-color: rgba(238, 189, 110, 0.1);
+}
+
+.headerNav li:last-child:hover {
+  background-color: rgba(238, 189, 110, 0.3);
+}
+
+.hero {
+  height: 100vh;
+  background-color: #16171B;
+}
+
+.heroLogo img {
+  width: 20%;
+}
+
+.heroLogo h1 {
+  margin-top: 30px;
+  font-size: 1.75rem;
+  letter-spacing: 4px;
+}
+
+.heroLogo h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.nosotros {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+}
+
+.nosotrosPersona {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nosotrosPersona:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.nosotrosPersonaData {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nosotrosPersonaData > h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 30px;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #eebd6e;
+}
+
+.nosotrosPersonaData > span {
+  text-transform: uppercase;
+  margin-bottom: 3%;
+  font-weight: 300;
+  color: #eebd6e;
+}
+
+.nosotrosPersonaData > p {
+  font-size: 0.875rem;
+  margin-bottom: 4%;
+}
+
+.nosotrosPersonaData > a {
+  width: 130px;
+  height: 45px;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: 1px solid #eebd6e;
+  color: #eebd6e;
+  background-color: rgba(238, 189, 110, 0.1);
+}
+
+.nosotrosPersonaData > a:hover {
+  background-color: rgba(238, 189, 110, 0.3);
+}
+
+.nosotrosPersonaDataRight {
+  text-align: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.nosotrosPersonaRightImg {
+  width: 45%;
+  background-size: cover;
+  background-position: center right;
+}
+
+.nosotrosPersonaLeftImg {
+  width: 45%;
+  background-size: cover;
+  background-position: center left;
+}
+
+#imgAntonucci {
+  background-image: url(/assets/img/antonucci.jpeg);
+}
+
+#imgCastro {
+  background-image: url(/assets/img/castro.jpeg);
+}
+
+.servicios {
+  padding: 100px 0;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.servicios > h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.servicios > h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #eebd6e;
+  margin-bottom: 5%;
+}
+
+.serviciosContainer {
+  width: 60%;
+}
+
+.serviciosContainerRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.serviciosContainerCard {
+  width: 18vw;
+  height: 18vw;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.serviciosContainerCardData {
+  width: 16vw;
+  height: 16vw;
+  border: 3px solid #eebd6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.serviciosContainerCardData > img {
+  width: 30%;
+  margin-bottom: 20%;
+}
+
+.serviciosContainerCardData > h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.125rem;
+  color: #16171B;
+}
+
+.contacto {
+  width: 100%;
+  height: 100vh;
+  padding: 100px 0;
+  background-image: url(/assets/img/contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactoData {
+  margin-left: 15%;
+}
+
+.contactoData > h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.contactoData > h3 {
+  font-size: 2rem;
+  letter-spacing: 7px;
+  color: #eebd6e;
+  margin-bottom: 1%;
+}
+
+.contactoData > span {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contactoDataDivisor {
+  display: inline-block;
+  width: 20%;
+  border-bottom: 1px solid #eebd6e;
+  margin: 5% 0;
+}
+
+.contactoDataIcon {
+  height: 60px;
+  margin-bottom: 10%;
+}
+
+.contactoDataIconImg > img {
+  height: 100%;
+}
+
+.contactoDataIconTxt {
+  margin-left: 5%;
+}
+
+.contactoDataIconTxt > p {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 3%;
+}
+
+.contactoDataIconTxt > span {
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+}
+
+/* boton volver arriba */
+#button-up {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0;
+  color: #c7c7c7;
+  border: 4px solid gray;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  pointer-events: none;
+}
+
+#button-up:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonucci & Asociados</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- boton volver arriba -->
+    <div class="flex flex-jc-c flex-ai-c" id="button-up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <header class="header flex flex-jc-sb flex-ai-c">
+        <div class="headerLogo flex flex-ai-c">
+            <img src="assets/img/logo.png" alt="Antonucci y Castro">
+            <span>ANTONUCCI & ASOCIADOS</span>
+        </div>
+        <nav class="headerNav">
+            <ul class="flex flex-jc-c flex-ai-c">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero flex flex-jc-c flex-ai-c">
+        <div class="heroLogo flex-c flex-jc-c flex-ai-c">
+            <img src="assets/img/logo.png" alt="Antonucci y Castro">
+            <h1>ANTONUCCI & ASOCIADOS</h1>
+            <h2>DEFENSAS PENALES</h2>
+        </div>
+    </section>
+
+    <main>
+
+        <section id="nosotros" class="nosotros">
+            <div class="nosotrosPersona">
+                <div class="nosotrosPersonaData nosotrosPersonaDataLeft">
+                    <h3>Dr. Guido Antonucci</h3>
+                    <span>Abogado Penalista</span>
+                    <p>Desempeñó funciones
+                        en la Unidad Funcional de Instrucción y Juicio N°9, en el juzgado de Garantías N°1 de Lomas de
+                        Zamora, y actualmente ejerce la defensa de forma privada. Integra la cátedra del Dr. Anibal Mathis en la Facultad Nacional de Lomas de Zamora. <br>
+                        Autor de "El proceso penal en la Provincia de Buenos Aires".
+                    </p>
+                    <a href="#contacto" class="flex flex-jc-c flex-ai-c">Contacto</a>
+                </div>
+
+                <div id="imgAntonucci" class="nosotrosPersonaRightImg"></div>
+            </div>
+
+            <div class="nosotrosPersona">
+                <div id="imgCastro" class="nosotrosPersonaLeftImg"></div>
+                <div class="nosotrosPersonaData nosotrosPersonaDataRight">
+                    <h3>Dr. German Castro</h3>
+                    <span>Abogado Penalista</span>
+                    <p>
+                        Se ha desempeñado en la Procuración General de la Nación, Juzgado de Garantías del Departamento Judicial de Lomas de Zamora.
+                        En el ámbito privado, ofrece defensas penales priorizando la atención personalizada, la responsabilidad, y la honestidad con el cliente. Realiza asesoramiento jurídico, representación
+                        legal en querellas y particular damnificado.
+                    </p>
+                    <a href="#contacto" class="flex flex-jc-c flex-ai-c">Contacto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios flex-c flex-jc-c flex-ai-c">
+            <h2>Nuestros Servicios</h2>
+            <h3>Derecho Penal</h3>
+            <div class="serviciosContainer">
+                <div class="serviciosContainerRow">
+
+                    <div class="serviciosContainerCard">
+                        <div class="serviciosContainerCardData">
+                            <img src="assets/icons/robo.png" alt="">
+                            <h4>Robo</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="serviciosContainerCard">
+                        <div class="serviciosContainerCardData">
+                            <img src="assets/icons/abuso.png" alt="">
+                            <h4>Abuso Sexual</h4>
+                        </div>
+                    </div>
+
+                    <div class="serviciosContainerCard">
+                        <div class="serviciosContainerCardData">
+                            <img src="assets/icons/drugs.png" alt="">
+                            <h4>Estupefacientes</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="contacto">
+
+        <div class="contactoData">
+            <h2>Contacto</h2>
+            <h3>ATENCIÓN LAS 24 hs.</h3>
+            <span>Defensas penales en toda la Provincia de Buenos Aires</span>
+            <span class="contactoDataDivisor"></span>
+            <a href="https://wa.me/5491126864312" class="contactoDataIcon flex">
+                <div class="contactoDataIconImg">
+                    <img src="/assets/icons/whatsapp.png" alt="">
+                </div>
+                <div class="contactoDataIconTxt flex-c flex-jc-c">
+                    <p>Linea de urgencias</p>
+                    <span>(011) 11-2686-4312</span>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/guidoantonucciok/" class="contactoDataIcon flex">
+                <div class="contactoDataIconImg">
+                    <img src="/assets/icons/instagram.png" alt="">
+                </div>
+                <div class="contactoDataIconTxt flex-c flex-jc-c">
+                    <span>@guidoantonucciok</span>
+                </div>
+            </a>
+        </div>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <script src="js/boton_volver.js"></script>
+</body>
+
+</html>
