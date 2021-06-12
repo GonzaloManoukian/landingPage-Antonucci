@@ -286,11 +286,11 @@ a {
 }
 
 #imgAntonucci {
-  background-image: url(assets/img/antonucci.jpeg);
+  background-image: url(../assets/img/antonucci.jpeg);
 }
 
 #imgCastro {
-  background-image: url(assets/img/castro.jpeg);
+  background-image: url(../assets/img/castro.jpeg);
 }
 
 .servicios {
@@ -377,7 +377,7 @@ a {
   width: 100%;
   height: 100vh;
   padding: 100px 0;
-  background-image: url(/assets/img/contacto.jpg);
+  background-image: url(../assets/img/contacto.jpg);
   background-position: center;
   background-size: cover;
   display: -webkit-box;
