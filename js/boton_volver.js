@@ -1,7 +1,7 @@
 //  Abrir Hamburger Menu
 
 const botonHamburger = document.querySelector(".headerHamburger");
-const menuMobile = document.querySelector(".headerNav");
+const menuMobile = document.querySelector("#headerNav");
 
 botonHamburger.addEventListener("click", function (e) {
   e.preventDefault();
@@ -10,8 +10,8 @@ botonHamburger.addEventListener("click", function (e) {
 });
 
 menuMobile.addEventListener("click", function () {
-  menuMobile.classList.remove("header__navMobileOpen");
-  botonHamburger.classList.remove("open");
+    menuMobile.classList.remove("headerNavOpen");
+    botonHamburger.classList.remove("open");
 });
 
 // Cerrar Modal Urgencias
