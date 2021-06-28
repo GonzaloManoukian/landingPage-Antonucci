@@ -11,9 +11,18 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        
+
+        @include breakpoint-down(medium) {
+            display: block;
+            height: auto;
+        }
+
         &:not(:last-child) {
             margin-bottom: 50px;
+
+            @include breakpoint-down(medium) {
+                margin-bottom: 100px;
+            }
         }
 
         &Data {
@@ -22,6 +31,11 @@
             flex-direction: column;
             padding: 0 5%;
             justify-content: center;
+
+            @include breakpoint-down(medium) {
+                width: 100%;
+                text-align: center;
+            }
 
             >h3 {
                 text-transform: uppercase;
@@ -55,6 +69,10 @@
                 color: $color-gold;
                 background-color: rgba(238, 189, 110, 0.1);
 
+                @include breakpoint-down(medium) {
+                    width: 100%;
+                }
+
                 &:hover {
                     background-color: rgba(238, 189, 110, 0.3);
                 }
@@ -64,6 +82,12 @@
 
                 text-align: right;
                 align-items: flex-end;
+
+                @include breakpoint-down(medium) {
+                    width: 100%;
+                    text-align: center;
+                    align-items: center;
+                }
             }
         }
 
@@ -71,18 +95,34 @@
             width: 45%;
             background-size: cover;
             background-position: center right;
+
+            @include breakpoint-down(medium) {
+                height: 300px;
+                width: auto;
+                background-position: center;
+                margin: 0 5%;
+                margin-top: 5%;
+            }
         }
 
         &LeftImg {
             width: 45%;
             background-size: cover;
             background-position: center left;
+
+            @include breakpoint-down(medium) {
+                height: 300px;
+                width: auto;
+                background-position: center;
+                margin: 0 5%;
+                margin-top: 5%;
+            }
         }
     }
 }
 
 #imgAntonucci {
-    background-image: url(../assets/img/antonucci.jpeg);
+    background-image: url(../assets/img/antonucci2.jpeg);
 }
 
 #imgCastro {

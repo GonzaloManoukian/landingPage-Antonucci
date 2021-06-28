@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antonucci & Asociados</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Playfair+Display:wght@400;500;600&display=swap"
@@ -22,7 +23,7 @@
     </div>
 
     <header class="header flex flex-jc-sb flex-ai-c">
-        <div class="headerLogo flex flex-ai-c">
+        <div class="headerLogo flex flex-ai-c hide-for-mobile">
             <img src="assets/img/logo.png" alt="Antonucci y Castro">
             <span>ANTONUCCI & ASOCIADOS</span>
         </div>
@@ -34,7 +35,23 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+
+        <a href="#" class="headerHamburger hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
     </header>
+
+    <aside class="modalUrgencias flex flex-ai-c flex-jc-c">
+        <div class="modalUrgenciasContent flex flex-ai-c flex-jc-sb">
+            <div class="flex flex-ai-c flex-jc-c">
+                <h2>URGENCIAS 24hs:</h2>
+                <a href="https://wa.me/5491126864312">(011) 11-2686-4312</a>
+            </div>
+            <i id="cerrarModalUrgencias" class="fas fa-times"></i>
+        </div>
+    </aside>
 
     <section class="hero flex flex-jc-c flex-ai-c">
         <div class="heroLogo flex-c flex-jc-c flex-ai-c">
@@ -51,10 +68,8 @@
                 <div class="nosotrosPersonaData nosotrosPersonaDataLeft">
                     <h3>Dr. Guido Antonucci</h3>
                     <span>Abogado Penalista</span>
-                    <p>Desempeñó funciones
-                        en la Unidad Funcional de Instrucción y Juicio N°9, en el juzgado de Garantías N°1 de Lomas de
-                        Zamora, y actualmente ejerce la defensa de forma privada. Integra la cátedra del Dr. Anibal Mathis en la Facultad Nacional de Lomas de Zamora. <br>
-                        Autor de "El proceso penal en la Provincia de Buenos Aires".
+                    <p>Desempeñó funciones en el poder judicial de la Provincia de Buenos Aires, actualmente ejerce la defensa de forma privada. Integra la cátedra del Dr. Anibal Mathis en la Facultad Nacional de Lomas de Zamora.
+                    Autor de "El proceso penal en la Provincia de Buenos Aires".
                     </p>
                     <a href="#contacto" class="flex flex-jc-c flex-ai-c">Contacto</a>
                 </div>
@@ -63,17 +78,16 @@
             </div>
 
             <div class="nosotrosPersona">
-                <div id="imgCastro" class="nosotrosPersonaLeftImg"></div>
+                <div id="imgCastro" class="nosotrosPersonaLeftImg hide-for-mobile"></div>
                 <div class="nosotrosPersonaData nosotrosPersonaDataRight">
                     <h3>Dr. German Castro</h3>
                     <span>Abogado Penalista</span>
                     <p>
-                        Se ha desempeñado en la Procuración General de la Nación, Juzgado de Garantías del Departamento Judicial de Lomas de Zamora.
-                        En el ámbito privado, ofrece defensas penales priorizando la atención personalizada, la responsabilidad, y la honestidad con el cliente. Realiza asesoramiento jurídico, representación
-                        legal en querellas y particular damnificado.
+                        Un profesional que ofrece defensas penales priorizando la atención personalizada, la responsabilidad, y la honestidad con el cliente. Realiza asesoramiento jurídico, representación legal en querellas y particular damnificado.
                     </p>
                     <a href="#contacto" class="flex flex-jc-c flex-ai-c">Contacto</a>
                 </div>
+                <div id="imgCastro" class="nosotrosPersonaLeftImg hide-for-desktop"></div>
             </div>
         </section>
 
@@ -82,10 +96,9 @@
             <h3>Derecho Penal</h3>
             <div class="serviciosContainer">
                 <div class="serviciosContainerRow">
-
                     <div class="serviciosContainerCard">
                         <div class="serviciosContainerCardData">
-                            <img src="assets/icons/robo.png" alt="">
+                            <img src="assets/icons/robar.png" alt="">
                             <h4>Robo</h4>
                         </div>
                     </div>
@@ -103,14 +116,34 @@
                             <h4>Estupefacientes</h4>
                         </div>
                     </div>
+                </div>
+                <div class="serviciosContainerRow">
+                    <div class="serviciosContainerCard">
+                        <div class="serviciosContainerCardData">
+                            <img src="assets/icons/lesiones.png" alt="">
+                            <h4>Lesiones</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="serviciosContainerCard">
+                        <div class="serviciosContainerCardData">
+                            <img src="assets/icons/estafa.png" alt="">
+                            <h4>Estafas</h4>
+                        </div>
+                    </div>
 
+                    <div class="serviciosContainerCard">
+                        <div class="serviciosContainerCardData">
+                            <img src="assets/icons/robo.png" alt="">
+                            <h4>Otros Delitos <br> Economicos</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer id="contacto" class="contacto">
-
         <div class="contactoData">
             <h2>Contacto</h2>
             <h3>ATENCIÓN LAS 24 hs.</h3>
@@ -134,8 +167,10 @@
                 </div>
             </a>
         </div>
-
     </footer>
+    <div class="creditos">
+        <p>Diseño y Desarrollo Web: <a href="https://www.instagram.com/gonzalomanoukian">Gonzalo Manoukian</a></p>
+    </div>
 
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <script src="js/boton_volver.js"></script>

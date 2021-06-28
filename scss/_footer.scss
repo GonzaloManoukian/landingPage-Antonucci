@@ -11,6 +11,9 @@
     &Data {
 
         margin-left: 15%;
+        @include breakpoint-down(medium) {
+            margin: 0 5%;
+        }
         > h2 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
@@ -45,6 +48,7 @@
 
                 > img {
                     height: 100%;
+                    width: auto;
                 }
             }
 
@@ -65,5 +69,15 @@
         }
 
 
+    }
+}
+
+.creditos {
+    padding: 20px 0;
+    text-align: center;
+    font-size: $font-14;
+
+    a {
+        color: $color-gold;
     }
 }

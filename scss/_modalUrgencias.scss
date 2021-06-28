@@ -1,0 +1,87 @@
+.modalUrgencias {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 480px;
+    height: 96px;
+    background-color: $color-gold;
+    text-align: center;
+    border-radius: 10px;
+    color: $color-black;
+    animation: aparecerIzquierda;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    
+    @include breakpoint-down(medium) {
+        left: 0;
+        width: 90%;
+        margin: 0 5%;
+        animation: aparecerIzquierdaMobile;
+    }
+    
+    &Content {
+        width: 455px;
+        height: 70px;
+        border: 3px solid $color-black;
+        border-radius: 10px;
+
+        @include breakpoint-down(medium) {
+            width: 96%;
+            height: 86%;
+        }
+
+        div {
+            margin-left: 20px;
+
+            @include breakpoint-down(medium) {
+                flex-direction: column;
+            }
+        }
+
+        h2 {
+            font-size: $font-20;
+        }
+
+        a {
+            display: inline-block;
+            font-size: $font-18;
+            font-weight: 600;
+            color: $color-black;
+            margin-left: 10px;
+        }
+
+        i {
+            margin-right: 20px;
+            font-size: $font-20;
+            cursor: pointer;
+        }
+    }
+
+    &Close {
+        left: -510px;
+
+        @include breakpoint-down(medium) {
+            left: -100vw;
+        }        
+    }
+}
+
+@keyframes aparecerIzquierda {
+    0% {
+        left: -510px;
+    }
+
+    100% {
+        left: 30px;
+    }
+}
+
+@keyframes aparecerIzquierdaMobile {
+    0% {
+        left: -100vw;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
