@@ -444,7 +444,8 @@ a {
 }
 
 #imgAntonucci {
-  background-image: url(../assets/img/antonucci2.jpeg);
+  background-image: url(../assets/img/antonucci3.jpeg);
+  background-position: top center;
 }
 
 #imgCastro {
